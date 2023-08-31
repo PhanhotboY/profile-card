@@ -1,12 +1,14 @@
 <h1 align='center'>Github Profile Card</h1>
 
-<p style='text-align: center;'>Embed a Github profile card to your website</p>
+<p align='center'>Embed a Github profile card to your website</p>
 
-<p style='text-align: center;'>
+<p align='center'>
         <i>Inspired from <a href='https://github.com/lepture/github-cards'>lepture's repo</a></i>
 </p>
 
-![Sample card](./assets//sample-card.png)
+<p align='center'>
+        <img src='./assets//sample-card.png' alt='Sample card' />
+</p>
 
 ## Usage
 
