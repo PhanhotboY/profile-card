@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        font-family: 'Segoe UI', 'Consolas';
+        box-sizing: border-box;
+      }
+
+      .card_container .data {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-inline: 0.5rem;
+        border-right: 1px rgba(0, 0, 0, 0.1) solid;
+      }
+
+      .card_container .data:last-child {
+        border: hidden;
+      }
+
+      .card_container .data .type {
+        font-weight: normal;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+        color: rgb(100 116 139);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card_container d-flex flex-col justify-around bg-white px-2 h-full w-full">
+      <div class="header flex items-center justify-start p-2 w-full h-3/5">
+        <!--response.html_url-->
+        <a
+          class="avatar block w-2/12 hover:opacity-80"
+          href="https://github.com/PhanhotboY"
+          target="_blank"
+          rel="noopener"
+        >
+          <!--response.avatar_url-->
+          <div
+            class="rounded-full w-full before:block before:pt-[100%]"
+            style="
+              background: url('https://avatars.githubusercontent.com/u/97371895?v=4') center/cover
+                no-repeat;
+            "
+          ></div
+        ></a>
+
+        <div class="name flex flex-col mr-auto ml-2">
+          <!--response.name-->
+          <div class="full_name font-semibold text-lg text-black">Phan Nguyen</div>
+          <!--response.html_url-->
+          <!--response.login-->
+          <a
+            class="user_name text-slate-500 font-normal text-sm hover:underline"
+            href="https://github.com/PhanhotboY"
+            target="_blank"
+            rel="noopener"
+            >@PhanhotboY</a
+          >
+        </div>
+
+        <a
+          class="follow mb-auto mt-3 pointer-events-auto rounded-md bg-indigo-600 px-2 py-1 text-[0.8125rem] font-semibold text-white hover:bg-indigo-500"
+          href="#"
+        >
+          Follow
+        </a>
+      </div>
+
+      <div class="separator w-full h-0 border-t border-slate-300"></div>
+
+      <div class="details flex items-center h-2/5 py-1 justify-start font-semibold uppercase">
+        <div class="data">
+          <!--response.public_repos-->
+          <span class="quantity repos">11</span>
+          <span class="type">repos</span>
+        </div>
+
+        <div class="data">
+          <!--response.public_gists-->
+          <span class="quantity gists">2231</span>
+          <span class="type">gists</span>
+        </div>
+
+        <div class="data border-hidden">
+          <!--response.followers-->
+          <span class="quantity followers">12312</span>
+          <span class="type">followers</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
