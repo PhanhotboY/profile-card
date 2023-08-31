@@ -1,14 +1,15 @@
 const baseGithubUrl = 'https://api.github.com';
-// const baseJsdelivrUrl = 'https://cdn.jsdelivr.net/gh'
+const baseJsdelivrUrl = 'https://cdn.jsdelivr.net/gh/PhanhotboY/profile-card@latest/jsdelivr/cards'
 
 const cardIframe = document.createElement('iframe');
 const cardEle = document.getElementById('github-card');
 const cardDataset = cardEle.dataset;
 
 const ghUser = await fetch(`${baseGithubUrl}/users/${cardDataset.user}`).then((res) => res.json());
+const themes = {default: 'default.html'}
 
 cardEle.parentNode.replaceChild(cardIframe, cardEle);
-cardIframe.src = '/jsdelivr/cards/default.html';
+cardIframe.src = `${baseJsdelivrUrl}/${themes.default}`
 
 const abbCharacters = ['', 'K', 'M', 'B', 'T'];
 const shortenNumber = (num, stack = 0) => {
