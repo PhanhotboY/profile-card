@@ -64,6 +64,7 @@ cardIframe.onload = (evt) => {
   avatarImg.style.backgroundImage = `url('${ghUser.avatar_url}')`;
   fullName.innerText = ghUser.name;
   userName.href = ghUser.html_url;
+  follow.href = ghUser.html_url;
   userName.innerText = `@${ghUser.login}`;
   reposQuan.innerText = ghUser.public_repos;
   gistsQuan.innerText = ghUser.public_gists;
