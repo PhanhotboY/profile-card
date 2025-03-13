@@ -16,7 +16,7 @@ The card can be easily embeded by adding the following HTML tags:
 
 ```HTML
 <div id="github-card" data-user="PhanhotboY" data-height="150px" data-width="350px"></div>
-<script src="https://cdn.jsdelivr.net/gh/PhanhotboY/profile-card@1.0.1/jsdelivr/widget.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/PhanhotboY/profile-card@1.0.1/jsdelivr/widget.js"></script>
 ```
 
 The script will automatically create the card for you by replacing the div tag with an iframe.
